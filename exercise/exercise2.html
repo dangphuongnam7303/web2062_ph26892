@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- get boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- get font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- get icons bootstrap -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- get css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h3><span class="far fa-edit"></span>Nhập lương tháng 12</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label for="">Mã nhân viên</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group col-sm-6">
+                        <label for="">Họ và tên </label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group col-sm-6">
+                        <label for="">Câu lạc bộ</label>
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>Chọn thành phố</option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Đà Nẵng</option>
+                            <option value="3">Thành phố Hồ Chí Minh</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="">Lương</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="">Thưởng</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="">Phụ cấp</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-sm-12">
+                        <label for="">Ghi chú</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-secondary"><span class="fa fa-save	" style="margin-right:5px"></span>Save</button>
+                <button type="button" class="btn btn-secondary"><i class="material-icons" style="font-size:13px;margin-top:5px">cancel</i>Cancel</button>
+            </div>
+            <div class="card-footer">
+                Vui lòng nhập thông tin lương cầu thủ
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

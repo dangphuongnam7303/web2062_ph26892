@@ -1,0 +1,11 @@
+thead th {
+    text-align: center !important;
+    vertical-align: middle !important;
+    background-color: lightgoldenrodyellow;
+}
+svg{
+    margin-bottom: 3px ;
+}
+#ex{
+    background-color: ghostwhite;
+}
