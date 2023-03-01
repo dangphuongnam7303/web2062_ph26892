@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="./index.html"><button>Trang chu</button></a>
+  <a href="./danhsach.html"><button>danh sach</button></a>
+
+  <form action="">
+    <label for="name">Ten</label> <input type="text" name="name" id="name">
+    <p id="valname"></p><br>
+    <label for="address">Dia chi</label> <input type="text" name="address" id="address">
+    <p id="valaddress"></p><br>
+    <label for="email">Email</label> <input type="email" name="email" id="email">
+    <p id="valemail"></p><br>
+    <select name="" id="gender">
+      <option value="0">Nam</option>
+      <option value="1">Nu</option>
+    </select>
+    <button type="button" id="btn-submit" onclick="myFunction()">Luu</button>
+  </form>
+  <script>
+    function myFunction() {
+      // Get the value of the input field with id="numb"
+      const name = document.querySelector("#name").value;
+      const address = document.querySelector("#address").value;
+      const email = document.querySelector("#email").value;
+      const gender = document.querySelector("#gender").value;
+      // If x is Not a Number or less than one or greater than 10
+      let valname;
+      let valaddress;
+      let valemail;
+      if (name == "") {
+        valname = "Vui long nhap ten";
+      } else {
+        valname = "";
+      }
+      if (address == "") {
+        valaddress = "Vui long nhap dia chi";
+      } else {
+        valaddress = "";
+
+      }
+      if (email == "") {
+        valemail = "Vui long nhap email";
+      } else {
+        valemail = "";
+      }
+      document.querySelector("#valname").innerHTML = valname;
+      document.querySelector("#valaddress").innerHTML = valaddress;
+      document.querySelector("#valemail").innerHTML = valemail;
+    }
+  </script>
+</body>
+
+</html>
